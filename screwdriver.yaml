@@ -1,0 +1,9 @@
+shared:
+    image: node:18
+jobs:
+    main:
+        steps:
+            - print: echo Starting main job!
+        requires:
+            - ~pr
+            - ~commit
